@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/cb009b150a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+    <title>REST Countries API with Color Theme Switcher</title>
+  </head>
+  <body>
+    <header>
+      <h1>Where in the world?</h1>
+      <button class="btn-theme">
+        <span class="theme-icon"><i class="fa-regular fa-moon"></i></span>
+        <span class="theme-mode">Dark Mode</span>
+      </button>
+    </header>
+
+    <main>
+      <div class="filter-search-container">
+        <div class="search">
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          <input type="search" id="search-input" placeholder="Search for a country..." />
+        </div>
+        <!-- <select id="filter-country">
+          <option value="all">All</option>
+          <option value="africa">Africa</option>
+          <option value="america">America</option>
+          <option value="asia">Asia</option>
+          <option value="europe">Europe</option>
+          <option value="oceania">Oceania</option>
+        </select> -->
+        <div class="select-menu">
+          <div class="select-btn">
+            <span class="sBtn-text">Filter by Region</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <ul class="options">
+            <li class="option"><span>Africa</span></li>
+            <li class="option"><span>Americas</span></li>
+            <li class="option"><span>Asia</span></li>
+            <li class="option"><span>Europe</span></li>
+            <li class="option"><span>Oceania</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="country-list">
+        <!-- <div class="country">
+          <a href="./country-details.html">
+            <img src="https://flagcdn.com/br.svg" alt="" />
+          </a>
+          <h3>Brazil</h3>
+
+          <div class="country-description">
+            <div class="population">
+              <span>Population:</span>
+              <span>206,135,893</span>
+            </div>
+            <div class="region">
+              <span>Region:</span>
+              <span>Americas</span>
+            </div>
+            <div class="capital">
+              <span>Capital:</span>
+              <span>Brasilia</span>
+            </div>
+          </div>
+        </div> -->
+      </section>
+
+      <section class="country-modal">
+        <button class="btn btn-back">
+          <span><i class="fa-solid fa-arrow-left"></i></span>Back
+        </button>
+        <!-- 
+        <article class="country-details">
+          <div class="country-details-wrapper">
+            <img src="https://flagcdn.com/br.svg" alt="" />
+            <div class="country-details-description">
+              <h2>Brazil</h2>
+              <div class="country-description-lists">
+                <ul class="left-details">
+                  <li><span>Native Name:</span> <span>Belgie</span></li>
+                  <li><span>Population: </span><span>Belgie</span></li>
+                  <li><span>Region:</span> <span>Belgie</span></li>
+                  <li><span>Sub Region:</span> <span>Belgie</span></li>
+                  <li><span>Capital:</span> <span>Belgie</span></li>
+                </ul>
+
+                <ul class="right-details">
+                  <li><span>Top Level Domain:</span> <span>Belgie</span></li>
+                  <li><span>Currencies:</span> <span>Belgie</span></li>
+                  <li><span>Languages:</span> <span>Belgie</span></li>
+                </ul>
+              </div>
+              <div class="border">
+                <h4>Border Countries:</h4>
+                <ul class="border-country">
+                  <li><button class="btn btn-border">France</button></li>
+                  <li><button class="btn btn-border">Germany</button></li>
+                  <li><button class="btn btn-border">Netherlands</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article> -->
+      </section>
+    </main>
+  </body>
+</html>

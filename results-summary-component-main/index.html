@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 1rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="result-container">
+        <h1>Your Result</h1>
+        <div class="result-circle">
+          <p id="result">76</p>
+          <span>of 100</span>
+        </div>
+        <p class="status">Great</p>
+        <p>
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+
+      <div class="summary-container">
+        <h2>Summary</h2>
+        <div class="summary-list-container">
+          <div class="summary-list reaction">
+            <div class="title">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt="icon-reaction"
+              />
+              <span>Reaction</span>
+            </div>
+
+            <p>
+              <span class="current-grade">80</span> /
+              <span class="max-grade">100</span>
+            </p>
+          </div>
+
+          <!--  -->
+
+          <div class="summary-list memory">
+            <div class="title">
+              <img src="./assets/images/icon-memory.svg" alt="icon-memory" />
+              <span>Memory</span>
+            </div>
+
+            <p>
+              <span class="current-grade">92</span> /
+              <span class="max-grade">100</span>
+            </p>
+          </div>
+
+          <!--  -->
+
+          <div class="summary-list verbal">
+            <div class="title">
+              <img src="./assets/images/icon-verbal.svg" alt="icon-verbal" />
+              <span>Verbal</span>
+            </div>
+
+            <p>
+              <span class="current-grade">61</span> /
+              <span class="max-grade">100</span>
+            </p>
+          </div>
+
+          <div class="summary-list visual">
+            <div class="title">
+              <img src="./assets/images/icon-visual.svg" alt="icon-visual" />
+              <span>Visual</span>
+            </div>
+
+            <p>
+              <span class="current-grade">72</span> /
+              <span class="max-grade">100</span>
+            </p>
+          </div>
+
+          <button>Continue</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Michael Tabilin</a>.
+    </div>
+  </body>
+</html>
