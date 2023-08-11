@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: hsl(204, 43%, 93%);
+  padding: 30px 10px;
+  flex-direction: column;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  /* box-shadow: 0px 0px 14px 1 px yellow; */
+
+  box-shadow: 0px 0px 14px 1px #00000024;
+  overflow: hidden;
+}
+
+.grid-item {
+  /* background-color: black;
+  color: white;
+  border: 1px solid red; */
+  padding: 28px;
+}
+
+.join-community-container {
+  /* grid-area: header; */
+  background-color: white;
+}
+
+.join-community-container h2 {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 23px;
+}
+
+.join-community-container h3 {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 23px;
+}
+
+.join-community-container p {
+  color: hsl(218, 22%, 67%);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.subscription-container {
+  /* grid-area: sidebar; */
+  background-color: hsl(179, 62%, 43%);
+}
+
+.subscription-container h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.subscription-container p {
+  color: hsl(204, 43%, 93%);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+#per-month {
+  color: #d9d9d9;
+
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.subscription-container span {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.subscription-container button {
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  font-weight: 700;
+  box-shadow: 0px 4px 10px 1px #00000033;
+  border-radius: 8px;
+}
+
+.why-us-container {
+  /* grid-area: content; */
+  background-color: #4abebd;
+}
+
+.why-us-container h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.why-us-container p {
+  color: hsl(204, 43%, 93%);
+  line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .join-community-container {
+    /* grid-area: 1/ 1/ 2/ 3; */
+    grid-area: 2/ 1/ 2/ 3;
+  }
+  .subscription-container,
+  .why-us-container {
+    /* grid-row: 2; */
+  }
+  .join-community-container h2 {
+    margin-bottom: 15px;
+  }
+  .join-community-container h3 {
+    margin-bottom: 15px;
+  }
+  .grid-item {
+    padding: 35px;
+  }
+  .subscription-container button {
+    margin-top: 20px;
+  }
+  .container {
+    max-width: 651px;
+  }
+  .main {
+    /* padding: 10px 50px; */
+  }
+  .why-us-container p {
+    font-size: 1rem;
+  }
+}

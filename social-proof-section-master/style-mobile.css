@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary Colors */
+  --dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /* Neutral Colors */
+  --white-color: hsl(0, 0%, 100%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+
+  /* Font Family */
+  --font-family: "League Spartan", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  padding-top: 5rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--dark-magenta);
+  max-width: 12ch;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  font-weight: 800;
+}
+
+.intro p {
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 2em;
+  max-width: 25rem;
+}
+
+.rating-container {
+  margin-bottom: 2.3rem;
+}
+
+.rating {
+  color: var(--dark-magenta);
+  text-align: center;
+  background-color: var(--light-grayish-magenta);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  padding: 0 5.9rem;
+
+  padding-bottom: 1rem;
+  border-radius: 7px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.rating > * + * {
+  margin-top: 1rem;
+}
+
+.profile {
+  background-color: var(--dark-magenta);
+  color: var(--white-color);
+  margin-bottom: 1rem;
+  padding: 2rem 2rem;
+  max-width: 25rem;
+  border-radius: 7px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.profile p:nth-of-type(1) {
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.profile p:nth-of-type(2) {
+  color: var(--soft-pink);
+}
+
+.profile-description {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile-description img {
+  border-radius: 50%;
+  width: 3rem;
+}
+
+.profile-name {
+  margin-left: 1.3rem;
+}
+
+.profile-name p:nth-of-type(1) {
+  margin-bottom: 0.2rem;
+}
+
+@media (min-width: 50em) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .intro {
+    grid-column: 1 / 2;
+  }
+
+  .rating-container {
+    grid-column: 2 / 3;
+    max-width: 25rem;
+  }
+  .testimonial-container {
+    grid-column: 1 / -1;
+  }
+  .testimonial {
+    display: flex;
+    gap: 1em;
+  }
+
+  h1 {
+    text-align: unset;
+
+    margin: unset;
+    margin-bottom: 0.5em;
+  }
+  .intro p {
+    text-align: unset;
+  }
+
+  .intro {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
