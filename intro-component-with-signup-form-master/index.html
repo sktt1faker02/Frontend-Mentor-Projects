@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./app.js" defer></script>
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+      <aside>
+        <button class="try_it">
+          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        </button>
+        <form action="" class="signup_form" novalidate>
+          <input
+            type="text"
+            placeholder="First Name"
+            class="fname textbox"
+            required
+          />
+
+          <span class="errMessage">First Name cannot be empty</span>
+          <input
+            type="text"
+            placeholder="Last Name"
+            class="lname textbox"
+            required
+          />
+
+          <span class="errMessage">Last Name cannot be empty</span>
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="email textbox"
+            required
+          />
+
+          <span class="errMessage error_email">Email cannot be empty</span>
+          <input
+            type="password"
+            placeholder="Password"
+            class="password textbox"
+            required
+          />
+
+          <span class="errMessage">Password cannot be empty</span>
+
+          <button class="claim" type="submit">Claim your free trial</button>
+          <p class="agreement">
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </form>
+      </aside>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Michael Tabilin</a>.
+      </p>
+    </footer>
+  </body>
+</html>
