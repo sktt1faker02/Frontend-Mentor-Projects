@@ -1,0 +1,47 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+
+  --dark-violet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+
+  /*========== Font and typography ==========*/
+  --ff-header: "DM Serif Display", serif;
+  --ff-body: "Karla", sans-serif;
+  --fs-body: 1rem;
+
+  --biggest-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  // Responsive typography
+  @media screen and (min-width: 968px) {
+    // --biggest-font-size: 3rem;
+    // --h2-font-size: 1.75rem;
+    // --h3-font-size: 1.25rem;
+    // --normal-font-size: 1rem;
+    // --small-font-size: 0.875rem;
+    // --smaller-font-size: 0.813rem;
+  }
+
+  /*========== Font weight ==========*/
+  --fw-400: 400;
+  --fw-700: 700;
+
+  /*========== Margenes ==========*/
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}

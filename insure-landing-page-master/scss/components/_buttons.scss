@@ -1,0 +1,12 @@
+/*=============== BUTTONS ===============*/
+.button {
+  border: 2px solid white;
+  padding: 0.6rem 1.5rem;
+  background-color: transparent;
+
+  &:hover {
+    background-color: var(--very-light-gray);
+    color: var(--dark-violet);
+    font-weight: 700;
+  }
+}

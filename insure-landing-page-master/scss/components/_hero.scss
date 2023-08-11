@@ -1,0 +1,55 @@
+/*=============== HERO ===============*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-violet);
+  // position: relative;
+  // z-index: -1;
+
+  &__data {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    position: relative;
+  }
+
+  &__data::before {
+    content: "";
+    background: url(/images/bg-pattern-intro-left-mobile.svg) no-repeat;
+    background-position: left top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+  }
+
+  &__data::after {
+    content: "";
+    background: url(/images/bg-pattern-intro-right-mobile.svg) no-repeat;
+    background-position: right bottom;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -41%;
+    right: -1rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+  }
+
+  &__description {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    color: #fff;
+    text-transform: uppercase;
+  }
+}

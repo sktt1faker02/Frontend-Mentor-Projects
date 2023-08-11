@@ -1,0 +1,44 @@
+/*=============== BASE ===============*/
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  color: #fff;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--fw-400);
+  color: #fff;
+  line-height: 1;
+  font-family: var(--ff-header);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
