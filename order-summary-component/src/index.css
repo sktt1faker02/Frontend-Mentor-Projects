@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: hsl(225, 100%, 94%) url("./images/pattern-background-mobile.svg") no-repeat top center;
+  background-size: cover;
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+.btn-shadow {
+  box-shadow: 0px 22px 11px 0px rgba(224, 232, 255, 1);
+}
+
+@media (min-width: 768px) {
+  body {
+    background: hsl(225, 100%, 94%) url("./images/pattern-background-desktop.svg") no-repeat;
+    background-position: 0% -67%;
+  }
+}
