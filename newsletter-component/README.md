@@ -1,6 +1,6 @@
 # Frontend Mentor - Newsletter sign-up form with success message
 
-Live Link: [Newsletter sign-up form with success message](https://newsletter-component-gamma.vercel.app/)
+Live Link: [Newsletter sign-up form with success message](https://sktt1faker02-newsletter-component.vercel.app/)
 
 ![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)
 
